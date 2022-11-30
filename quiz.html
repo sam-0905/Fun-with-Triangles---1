@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Triangle Quiz</title>
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="nav-brand">Fun with Triangles </div>
+
+        <ul class="non-bullet nav-pills">
+
+            <li class="list-item-inline">
+                <a href="/index.html" class="nav-link">IsTriangle</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/hypotenuse.html" class="nav-link">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/area.html" class="nav-link">Area</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/quiz.html" class="nav-link link-active">Quiz</a>
+
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="heading">Triangle Quiz</h1>
+        <form class="quiz-form">
+            <div class="quiz-container">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label><input type="radio" name="question1" value="45°" />45°</label>
+                <label><input type="radio" name="question1" value="60°" />60°</label>
+                <label><input type="radio" name="question1" value="90°" />90°</label>
+
+            </div>
+
+            <div class="quiz-container">
+                <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+                <label><input type="radio" name="question2" value="obtuse" />obtuse</label>
+                <label><input type="radio" name="question2" value="acute" /> acute </label>
+                <label><input type="radio" name="question2" value="right angled" />right angled</label>
+            </div>
+        </form>
+        <button id="submit-answer-btn" class="button">Submit Answer</button>
+        <div id="output-box"></div>
+    </div>
+
+
+
+    <script src="/quiz.js"></script>
+</body>
+
+</html>
