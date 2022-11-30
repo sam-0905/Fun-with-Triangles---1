@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+:root {
+    --primary-color: #0c4a6e;
+    --secondary-color: #bae6fd;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--primary-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Megrim", cursive;
+    text-align: initial;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: var(--secondary-color);
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 50%;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    /*display: block;*/
+    /*text-align: center;*/
+}
+
+.heading {
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.input-angle {
+    display: block;
+    margin: 0.5rem 0rem 1rem 0rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.input-side {
+    display: block;
+    margin: 0.5rem 0rem 1rem 0rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid whitesmoke;
+    margin: 0 0 1rem 0;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+#output-box {
+    font-size: x-large;
+    margin-top: 1rem;
+}
+
+.quiz-form {
+    max-width: 100%;
+    margin: auto;
+}
+
+.quiz-container {
+    width: 87%;
+    border: 1px solid whitesmoke;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
