@@ -80,9 +80,11 @@ body {
     cursor: pointer;
     border-radius: 1rem;
     border: 1px solid whitesmoke;
+    height: 7vh;
     margin: 0 0 1rem 0;
     color: var(--primary-color);
     background-color: #fff;
+    font-size: medium;
 }
 
 #output-box {
