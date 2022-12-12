@@ -14,16 +14,29 @@ function calculateSumOfAngles(angle1, angle2, angle3) {
 
 function isTriangle() {
     if (inputs[0].value < 0 || inputs[1].value < 0 || inputs[2].value < 0) {
-        outputBox.innerText = "please enter valid input";
+        outputBox.innerText = "Pleaer valid input";
         return;
     }
+
+    if (inputs[0].value === "" || inputs[1].value === "" || inputs[2].value === "") {
+        outputBox.innerText = "Please enter valid input";
+        return;
+    }
+
+    if (inputs[0].value === 0 || inputs[1].value === 0 || inputs[2].value === 0) {
+        outputBox.innerText = "Angles can't be zero";
+        return;
+    }
+
+
     const SumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
     if (SumOfAngles === 180) {
         outputBox.innerText = " Yay , These angle forms a triangle"
-    } else {
-        outputBox.innerText = " oh ! this angle don't form a triangle"
+        return;
     }
-
+    //} else {
+    //    outputBox.innerText = " oh ! this angle don't form a triangle"
+    //}
 
     inputs[0].value = ""
     inputs[1].value = ""
