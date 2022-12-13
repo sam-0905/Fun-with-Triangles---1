@@ -22,7 +22,7 @@ function calculateAreaOfTriangle() {
         return;
     }
     var area = (0.5) * inputBase.value * inputHeight.value;
-    outputBox.innerText = "The area of a triangle is " + area;
+    outputBox.innerText = "The area of a triangle is " + area + "cm²";
 
     inputBase.value = "";
     inputHeight.value = "";
