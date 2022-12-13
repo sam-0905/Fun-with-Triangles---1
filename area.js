@@ -10,7 +10,15 @@ const outputBox = document.querySelector("#output-box");
 function calculateAreaOfTriangle() {
     //console.log("Calculate area called", inputBase.value, inputHeight.value);
     if (inputBase.value < 0 || inputHeight.value < 0) {
-        outputBox.innerText = "please enter valid input";
+        outputBox.innerText = "please enter valid input 🤔";
+        return;
+    }
+    if (inputBase.value === "" || inputHeight.value === "") {
+        outputBox.innerText = "Input field is empty 📖 ";
+        return;
+    }
+    if (inputBase.value == 0 || inputHeight.value == 0) {
+        outputBox.innerText = "The value has to be greater than zero 0️⃣ !";
         return;
     }
     var area = (0.5) * inputBase.value * inputHeight.value;

@@ -14,20 +14,18 @@ function calculateSumOfSquares(a, b) {
 function calculateHypotenuse() {
 
     if (sides[0].value === "" || sides[1].value === "") {
-        outputBox.innerText = " The value has to be greater than zero";
+        outputBox.innerText = "Input field is empty 📖 ";
         return;
     }
-
-    if (sides[0].value === 0 || sides[1].value === 0) {
-        outputBox.innerText = "Angles can't be zero";
-        return;
-    }
-
     if (sides[0].value < 0 || sides[1].value < 0) {
-        outputBox.innerText = "please enter valid input";
+        outputBox.innerText = "please enter valid input 🤔";
         return;
     }
 
+    if (sides[0].value == 0 || sides[1].value == 0) {
+        outputBox.innerText = "The value has to be greater than zero 0️⃣ !";
+        return;
+    }
 
     const sumOfSquares = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value));
     const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
