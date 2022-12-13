@@ -14,11 +14,11 @@ function calculateAreaOfTriangle() {
         return;
     }
     if (inputBase.value === "" || inputHeight.value === "") {
-        outputBox.innerText = "Input field is empty 📖 ";
+        outputBox.innerText = "Base and Height can't be empty 📖 ";
         return;
     }
     if (inputBase.value == 0 || inputHeight.value == 0) {
-        outputBox.innerText = "The value has to be greater than zero 0️⃣ !";
+        outputBox.innerText = "The Base and Height has to be greater than zero 0️⃣ !";
         return;
     }
     var area = (0.5) * inputBase.value * inputHeight.value;

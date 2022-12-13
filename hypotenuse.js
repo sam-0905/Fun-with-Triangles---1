@@ -14,7 +14,7 @@ function calculateSumOfSquares(a, b) {
 function calculateHypotenuse() {
 
     if (sides[0].value === "" || sides[1].value === "") {
-        outputBox.innerText = "Input field is empty 📖 ";
+        outputBox.innerText = "Sides can't be empty 📖 ";
         return;
     }
     if (sides[0].value < 0 || sides[1].value < 0) {
@@ -23,7 +23,7 @@ function calculateHypotenuse() {
     }
 
     if (sides[0].value == 0 || sides[1].value == 0) {
-        outputBox.innerText = "The value has to be greater than zero 0️⃣ !";
+        outputBox.innerText = "The Sides has to be greater than zero 0️⃣ !";
         return;
     }
 
